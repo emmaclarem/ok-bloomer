@@ -29,9 +29,14 @@ body {
     margin-inline: auto;
 }
 
+.grid-container {
+    display: grid;
+    margin-inline: auto;
+}
+
 section {
     width: min(1200px, 90%);
-    margin: 0 auto;
+    margin-inline: auto;
 }
 
 @media only screen and (max-width:740px) {
@@ -112,6 +117,10 @@ a {
     text-decoration-color: var(--lilac);
 }
 
+.nav-margin {
+    margin-top: 80px;
+}
+
 /*===============
 ==WAVE DIVIDERS==
 ===============*/
@@ -185,7 +194,8 @@ button:active {
 ===============*/
 
 .homepage-hero {
-    margin-top: 80px;
+    grid-template: 1fr / 1fr 1fr;
+    width: min(1000px, 100%);
 }
 
 .homepage-hero p {
@@ -194,16 +204,15 @@ button:active {
 }
 
 .sub-container {
+    display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    display: flex;
     flex-direction: column;
 }
 
 .illustration {
-    width: 80%;
-    align-self: center;
+    width: 90%;
+    filter: drop-shadow(2px 2px 5px rgba(53, 53, 25, 0.3));
 }
 
 .homepage-benefits {
@@ -212,14 +221,28 @@ button:active {
 }
 
 .green-bg {
-    background-color: #bab653;
+    background-color: var(--light-green);
 
 }
 
-.grid-container {
-    margin-inline: auto;
-    display: grid;
+.button-container {
     grid-template: 1fr 1fr / 1fr 1fr;
     grid-gap: 1.5rem;
     margin-top: 50px
+}
+
+@media only screen and (max-width:730px) {
+    .homepage-hero {
+        margin-top: 50px;
+        grid-template: 1fr 1fr / 1fr;
+    }
+    .button-container {
+        grid-template: repeat(4, 1fr) / 1fr;
+    }
+    .illustration {
+        width: 100%;
+    }
+    .homepage-hero p {
+        width: 85%;
+    }
 }
