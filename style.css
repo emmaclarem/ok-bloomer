@@ -1,6 +1,16 @@
 /*===============
 ==GLOBAL STYLES==
 ===============*/
+@font-face {
+    font-family: 'Geronide';
+    src: url('./fonts/geronideregulardemo-al5n7-webfont.woff2') format('woff2'),
+         url('./fonts/geronideregulardemo-al5n7-webfont.woff') format('woff'),
+         url('./fonts/GeronideRegularDEMO.ttf') format('truetype'),
+         url('./fonts/Geronideregulardemo-AL5n7.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 :root {
     --lilac: #ddb8fd;
@@ -41,7 +51,7 @@ section {
 
 @media only screen and (max-width:740px) {
     .flex-container {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .sub-container {
         width: 100%;
@@ -63,10 +73,13 @@ h1 {
 
 h2 {
     font-size: 2rem;
+    font-family: 'Geronide', sans-serif;
+    text-transform: uppercase;
 }
 
 h3 {
     font-size: 1.5rem;
+    margin-bottom: 0.75em;
 }
 
 a {
@@ -91,14 +104,14 @@ a {
     align-items: center;
     height: 46px;
     position: fixed;
-    width: 100%;
+    z-index: 10;
+    width: min(1000px, 95%);
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(245, 236, 229, 0.6)
     ;
     backdrop-filter: blur(20px) saturate(180%);
-
 }
 
 .logo {
@@ -120,6 +133,7 @@ a {
 .nav-margin {
     margin-top: 80px;
 }
+
 
 /*===============
 ==WAVE DIVIDERS==
@@ -217,7 +231,7 @@ button:active {
 
 .homepage-benefits {
     padding: 10px;
-    width: min(750px, 100%);
+    width: min(750px, 95%);
 }
 
 .green-bg {
@@ -234,7 +248,7 @@ button:active {
 @media only screen and (max-width:730px) {
     .homepage-hero {
         margin-top: 50px;
-        grid-template: 1fr 1fr / 1fr;
+        grid-template: 1fr 1.5fr / 1fr;
     }
     .button-container {
         grid-template: repeat(4, 1fr) / 1fr;
