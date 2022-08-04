@@ -123,7 +123,7 @@ header {
 }
 
 .primary-navigation a {
-    text-decoration: underline wavy var(--lilac);
+    text-decoration: underline wavy var(--light-yellow);
     color: var(--med-green);
     font-size: 1.25rem;
 }
@@ -222,7 +222,7 @@ button:hover {
     transition: all 0.15s;
 }
 
-i {
+button i {
     margin-right: 0.5em;
     vertical-align: middle;
 }
@@ -251,7 +251,7 @@ button:active {
     }
 }
 /*===============
-====HOME PAGE====
+=GENERAL LAYOUT==
 ===============*/
 
 .logo {
@@ -291,14 +291,17 @@ button:active {
     font-size: 1.25rem;
 }
 
+.homepage-benefits > p {
+    margin-bottom: 50px;
+}
+
 .green-bg {
     background-color: var(--light-green);
 }
 
-.button-container {
+.four-item-container {
     grid-template: 1fr 1fr / 1fr 1fr;
     grid-gap: 1.5rem;
-    margin-top: 50px
 }
 
 @media only screen and (max-width:760px) {
@@ -318,10 +321,20 @@ button:active {
         margin-top: 50px;
         grid-template: 1fr 1fr / 1fr;
     }
-    .button-container {
+    .four-item-container {
         grid-template: repeat(4, 1fr) / 1fr;
     }
     .homepage-hero p {
         width: 85%;
     }
+}
+
+.aside-title {
+    font-weight: 700;
+    font-size: 1.75rem;
+}
+
+.aside {
+    text-align: left;
+    margin-inline: 1rem;
 }
