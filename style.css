@@ -69,7 +69,9 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    margin-top: 0.75rem;
 }
 
 h2 {
@@ -108,17 +110,6 @@ header {
     width: 100%;
 }
 
-.primary-navigation li a:hover, .primary-navigation li a:focus {
-    color: var(--med-green);
-    text-decoration: underline wavy;
-    text-decoration-color: var(--lilac);
-}
-
-.logo-small {
-    height: 50px;
-    margin-left: 0.5rem;
-}
-
 .primary-header {
     align-items: center;
     justify-content: space-between;
@@ -126,29 +117,39 @@ header {
     margin-inline: auto;
 }
 
-.nav-toggle {
-    display: none;
-}
-
 .primary-navigation {
-    color: var(--dark-green);
     list-style: none;
     gap: 3rem;
 }
 
 .primary-navigation a {
-    text-decoration: none;
+    text-decoration: underline wavy var(--lilac);
     color: var(--med-green);
+    font-size: 1.25rem;
 }
 
-@media only screen and (max-width:450px) {
+.primary-navigation li a:hover, .primary-navigation li a:focus {
+    color: var(--dark-green);
+    text-decoration-color: var(--orange);
+}
+
+.logo-small {
+    height: 50px;
+    margin-left: 0.5rem;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+
+@media only screen and (max-width:500px) {
     .primary-navigation {
         position: fixed;
         inset: 0 0 0 50%;
         flex-direction: column;
         padding: min(20vh, 6rem) 2rem;
         background-color: var(--off-white);
-        box-shadow: -8px 0px 10px rgba(53, 53, 25, 0.1);
         gap: 2.5rem;
         z-index: 90;
         transform: translateX(100%);
@@ -156,6 +157,7 @@ header {
     }
     .primary-navigation.active {
         transform: translateX(0%);
+        box-shadow: -8px 0px 10px rgba(53, 53, 25, 0.1);
     }
     header {
         background-color: var(--off-white);
@@ -243,12 +245,17 @@ button:active {
     transition: all 0.15s;
 }
 
+@media only screen and (max-width:730px) and (min-width:680px) {
+    button {
+        font-size: 1rem;
+    }
+}
 /*===============
 ====HOME PAGE====
 ===============*/
 
 .logo {
-    width: 300px;
+    width: min(375px, 90%);
     vertical-align: middle;
 }
 
@@ -258,8 +265,8 @@ button:active {
 }
 
 .homepage-hero p {
-    margin-block: 0.75em;
     width: 70%;
+    color: var(--med-green);
 }
 
 .sub-container {
@@ -267,6 +274,7 @@ button:active {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 1rem;
 }
 
 .illustration {
@@ -279,9 +287,12 @@ button:active {
     width: min(750px, 95%);
 }
 
+.homepage-benefits p {
+    font-size: 1.25rem;
+}
+
 .green-bg {
     background-color: var(--light-green);
-
 }
 
 .button-container {
@@ -290,16 +301,25 @@ button:active {
     margin-top: 50px
 }
 
-@media only screen and (max-width:730px) {
-    .homepage-hero {
-        margin-top: 50px;
-        grid-template: 1fr 1.5fr / 1fr;
-    }
-    .button-container {
-        grid-template: repeat(4, 1fr) / 1fr;
+@media only screen and (max-width:760px) {
+    .homepage-hero p {
+        width: 90%;
     }
     .illustration {
         width: 100%;
+    }
+    h1 {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width:680px) {
+    .homepage-hero {
+        margin-top: 50px;
+        grid-template: 1fr 1fr / 1fr;
+    }
+    .button-container {
+        grid-template: repeat(4, 1fr) / 1fr;
     }
     .homepage-hero p {
         width: 85%;
