@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dd8ffa8d1d.js" crossorigin="anonymous"></script>
+    <script src="./script.js" defer></script>
     <link rel="shortcut icon" href="./images/ok-bloomer-favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>OK Bloomer</title>
@@ -15,25 +16,36 @@
 
 <body>
     <!-- NAVBAR & LOGO -->
-    <nav>
-        <ul class="nav-links flex-container">
-            <li><a href="#">home</a></li>
-            <li><a href="#">plants</a></li>
-            <li><img src="./images/ok-bloomer-logo.png" alt="OK Bloomer logo" class="logo"></li>
-            <li><a href="#">benefits</a></li>
-            <li><a href="#">about</a></li>
-        </ul>
-    </nav>
+    <header>
+        <div class="primary-header flex">
+            <div>
+                <img src="./images/ok-bloomer-logo-small.png" alt="OK Bloomer logo" class="logo-small">
+            </div>
+            <div id="nav-toggle" class="nav-toggle" aria-controls="primary-navigation">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+                <span class="sr-only">Menu</span>
+            </div>
+            <nav>
+                <ul id="primary-navigation" class="primary-navigation flex" data-visible="false">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">plants</a></li>
+                    <li><a href="#">benefits</a></li>
+                    <li><a href="#">about</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <!-- HOMEPAGE HERO SECTION -->
     <section>
-        <div class="grid-container homepage-hero nav-margin">
+        <div class="grid-container homepage-hero">
             <div class="sub-container">
+                <img src="./images/ok-bloomer-logo.png" alt="OK Bloomer logo" class="logo">
                 <h1>plants for<br>mental health</h1>
                 <p>we're on a mission to increase happiness everywhere by raising awareness about the positive effects of plants on mental health</p>
                 <div>
-                    <button class="btn-primary"><i class="fa-solid fa-brain"></i>benefits</button>
-                    <button class="btn-primary"><i class="fa-solid fa-leaf"></i>plants</button>
+                    <button class="btn-primary"><i class="fa-solid fa-brain" aria-hidden="true"></i>benefits</button>
+                    <button class="btn-primary"><i class="fa-solid fa-leaf" aria-hidden="true"></i>plants</button>
                 </div>
             </div>
             <div class="sub-container">
@@ -54,22 +66,22 @@
             <p class="light-text">Being around plants helps us feel more calm and relaxed, thus decreasing levels of anxiety. We can help you find a plant that suits your home and lifestyle, so you can reap the benefits of a greener space.</p>
             <div class="grid-container button-container">
                 <button class="btn-secondary">
-                    <i class="fa-solid fa-sun fa-xl"></i>
+                    <i class="fa-solid fa-sun fa-xl" aria-hidden="true"></i>
                     sun-lovers
                     <p>click here to see plants that thrive in sunny spots</p>
                 </button>
                 <button class="btn-secondary">
-                    <i class="fa-solid fa-cloud-sun fa-xl"></i>
+                    <i class="fa-solid fa-cloud-sun fa-xl" aria-hidden="true"></i>
                     shade-lovers
                     <p>click here to see plants that thrive in shaded spots</p>
                 </button>
                 <button class="btn-secondary">
-                    <i class="fa-solid fa-droplet fa-xl"></i>
+                    <i class="fa-solid fa-droplet fa-xl" aria-hidden="true"></i>
                     humidity-lovers
                     <p>click here to see plants that thrive in high humidity</p>
                 </button>
                 <button class="btn-secondary">
-                    <i class="fa-solid fa-seedling fa-xl"></i>
+                    <i class="fa-solid fa-seedling fa-xl" aria-hidden="true"></i>
                         easy-care
                         <p>click here to see plants that thrive nearly anywhere</p>
                 </button>
