@@ -136,6 +136,13 @@ header {
 .logo-small {
     height: 50px;
     margin-left: 0.5rem;
+    vertical-align: middle;
+}
+
+.nav-logo {
+    height: 50px;
+    padding-block: 5px;
+    vertical-align: middle;
 }
 
 .nav-toggle {
@@ -259,12 +266,12 @@ button:active {
     vertical-align: middle;
 }
 
-.homepage-hero {
+.hero {
     grid-template: 1fr / 1fr 1fr;
     width: min(1000px, 100%);
 }
 
-.homepage-hero p {
+.hero p {
     width: 70%;
     color: var(--med-green);
 }
@@ -282,16 +289,16 @@ button:active {
     filter: drop-shadow(2px 2px 5px rgba(53, 53, 25, 0.3));
 }
 
-.homepage-benefits {
+.section-two {
     padding: 10px;
     width: min(750px, 95%);
 }
 
-.homepage-benefits p {
+.section-two p {
     font-size: 1.25rem;
 }
 
-.homepage-benefits > p {
+.section-two > p {
     margin-bottom: 50px;
 }
 
@@ -305,7 +312,7 @@ button:active {
 }
 
 @media only screen and (max-width:760px) {
-    .homepage-hero p {
+    .hero p {
         width: 90%;
     }
     .illustration {
@@ -317,14 +324,14 @@ button:active {
 }
 
 @media only screen and (max-width:680px) {
-    .homepage-hero {
+    .hero {
         margin-top: 50px;
         grid-template: 1fr 1fr / 1fr;
     }
     .four-item-container {
         grid-template: repeat(4, 1fr) / 1fr;
     }
-    .homepage-hero p {
+    .hero p {
         width: 85%;
     }
 }
