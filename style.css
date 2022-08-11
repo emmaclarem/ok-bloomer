@@ -267,6 +267,12 @@ header {
     justify-content: center;
 }
 
+@media only screen and (max-width:420px) {
+    .btn-container {
+        flex-direction: column;
+    }
+}
+
 .btn-sort {
     font-family: 'Poppins', sans-serif;
     font-size: 1.25rem;
@@ -450,6 +456,10 @@ header {
 .aside {
     text-align: left;
     margin-inline: 1rem;
+}
+
+.sort-instructions {
+    width: 90%;
 }
 
 /*===============
