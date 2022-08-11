@@ -1,9 +1,15 @@
 <p align="center"> <img src="https://user-images.githubusercontent.com/104512014/182873126-7dd146c4-9134-439a-9af6-b057e8139831.png" width="400px"/> </p>
 
 ## About
-This is my final project for the Code First Girls Web Development Kickstarter course. 
+This is my final project for the Code First Girls Web Development Kickstarter course.
+
+I built a responsive website using HTML, CSS, and JavaScript. The site has a page which talks about the benefits of plants on mental health, and also has a page which shows a variety of beginner-friendly plants which can be filtered according to their various needs. 
 
 <img src="https://github.com/FortAwesome/Font-Awesome/blob/6.x/svgs/solid/arrow-up-right-from-square.svg" width="20" height="20">[ View Live Site](https://emmaclarem.github.io/ok-bloomer/)
+
+<img width=600 src=https://user-images.githubusercontent.com/104512014/184227877-83ca251b-c939-430a-8268-163e1399673d.png>
+
+
 
 
 ## Project Requirements 
@@ -44,4 +50,10 @@ This is my final project for the Code First Girls Web Development Kickstarter co
 - [ ] Fix primary buttons on the homepage (currently doing some weird things when tabbing through because it's a button wrapped in an anchor tag)
 - [ ] Fix mobile nav so it doesn't briefly pop out when screen shrinks
 - [ ] Check which CSS properties need -webkit- prefixes and add those in where needed
+
+
+## Sources
+- Illustrations from [DrawKit](https://drawkit.com/product/ecology-environment-illustrations)
+- Plant photos from [Patch Plants](https://www.patchplants.com/gb/en/)
+- Icons from [FontAwesome](https://fontawesome.com/)
 
