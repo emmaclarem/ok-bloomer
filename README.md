@@ -1,7 +1,10 @@
 <p align="center"> <img src="https://user-images.githubusercontent.com/104512014/182873126-7dd146c4-9134-439a-9af6-b057e8139831.png" width="400px"/> </p>
 
 ## About
-This is my in-progress final project for Code First Girls Web Development Kickstarter course. 
+This is my final project for the Code First Girls Web Development Kickstarter course. 
+
+<img src="https://github.com/FortAwesome/Font-Awesome/blob/6.x/svgs/solid/arrow-up-right-from-square.svg" width="20" height="20">[ View Live Site](https://emmaclarem.github.io/ok-bloomer/)
+
 
 ## Project Requirements 
 #### Must Have:
