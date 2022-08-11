@@ -2,9 +2,26 @@
 const primaryNav = document.getElementById('primary-navigation');
 const navToggle = document.getElementById('nav-toggle');
 
-navToggle.addEventListener('click', () => {
+navToggle.addEventListener('click', function () {
     primaryNav.classList.toggle('active');
 })
+
+
+// toggles accordion menus open and closed on click
+const accordionItemHeaders = document.querySelectorAll('.accordion-item-header');
+
+accordionItemHeaders.forEach(accordionItemHeader => {
+    accordionItemHeader.addEventListener('click', function () {
+        accordionItemHeader.classList.toggle('active-accordion');
+        const accordionItemBody = accordionItemHeader.nextElementSibling;
+        if (accordionItemHeader.classList.contains('active-accordion')) {
+            accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + 'px';
+        }
+        else {
+            accordionItemBody.style.maxHeight = '0';
+        }
+    });
+});
 
 
 // get button elements
