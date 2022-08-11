@@ -19,8 +19,9 @@ This is my final project for the Code First Girls Web Development Kickstarter co
 - [x] JavaScript used to enable user interaction
 
 ## What Went Well
-1. The JavaScript sorting function was a lot easier to write than I thought it would be, I got it done so much more quickly than I thought I would.
-2. I'm really happy with the design and colour scheme.
+1. The JavaScript sorting function was a lot easier to write than I thought it would be, I'm really proud of that!
+2. I'm really happy with the overall design and colour scheme.
+3. I managed to create lots of reusable layouts, elements, and classes, so styling some things became quite quick towards the end.
 
 ## Where I Struggled
 1. Getting the mobile nav menu to work took me forever, and it still doesn't look quite as I intended it to. I'd like to have the same frosted-glass effect on the mobile nav as is on the desktop nav, but the backdrop-filter property wasn't playing nice with the expanding menu. I settled for an opaque nav menu for now.
