@@ -38,7 +38,7 @@ This is my final project for the Code First Girls Web Development Kickstarter co
 
 ## Continued Development / Still To Do
 - [ ] Add the aria-expanded attribute on the accordion items and mobile nav for increased accessibility, to be toggled with JS
-- [ ] Add an 'About' page with more details about the project
+- [ ] Add an 'About' page with more details about the project and a form
 - [ ] Do futher research into the content to improve the site copy and make it more personal and engaging
 - [ ] Add an 'active' class to the current page to aid with visual navigation
 - [ ] Fix primary buttons on the homepage (currently doing some weird things when tabbing through because it's a button wrapped in an anchor tag)
