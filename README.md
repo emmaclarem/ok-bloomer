@@ -20,5 +20,14 @@ This is my in-progress final project for Code First Girls Web Development Kickst
 2. Implementing event listeners
 3. Using JavaScript to add an 'active' class to various components on click
 4. Using JavaScript to filter items on user interaction
+5. Using a forEach loop to add event listeners to several elements with minimal code
+6. Creating an accordion menu with JavaScript to toggle each item open and closed
+7. Using the aria-controls element for accessibility
 
+## Continued Development / Still To Do
+- [ ] Add the aria-expanded attribute on the accordion items and mobile nav for increased accessibility
+- [ ] Add an 'About' page 
+- [ ] Do futher research into the content to improve the site copy and make it more personal and engaging
+- [ ] Add an 'active' class to the current page to aid with visual navigation
+- [ ] Fix primary buttons on the homepage (currently doing some weird things when tabbing through)
 
