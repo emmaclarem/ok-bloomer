@@ -257,6 +257,69 @@ button:active {
         font-size: 1rem;
     }
 }
+
+/*===============
+======CARDS======
+===============*/
+
+.card-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: rgba(233, 207, 130, 0.3);
+    border: 4px solid var(--med-green);
+    border-radius: 30px;
+    width: min(275px, 95%);
+    margin: 0.75rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 3px 3px 10px rgba(53, 53, 25, 0.3);
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-img img {
+    width: 100%;
+    border-top-left-radius: 27px;
+    border-top-right-radius: 27px;
+    border-bottom: 4px solid var(--light-yellow);
+}
+
+.card-text {
+    width: 90%;
+    flex-direction: column;
+    margin: 0.8rem;
+    gap: 0.7rem;
+}
+
+.card-text h3 {
+    margin-bottom: 0;
+}
+
+.card-info {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-info p {
+    width: 80%;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.card-info p {
+    color: var(--dark-green);
+}
+
+.card-info i {
+    color: var(--med-green);
+}
+
 /*===============
 =GENERAL LAYOUT==
 ===============*/
