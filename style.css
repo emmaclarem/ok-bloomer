@@ -37,6 +37,7 @@ body {
 
 .flex {
     display: flex;
+    flex-wrap: wrap;
     /* margin-inline: auto; */
 }
 
@@ -260,6 +261,27 @@ header {
     }
 }
 
+.btn-container {
+    justify-content: center;
+}
+
+.btn-sort {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    color: var(--med-green);
+    background-color: rgba(233, 207, 130, 0.3);
+    border: 2px solid var(--dark-green);
+    border-radius: 100px;
+    padding: 0.5em 1em;
+    margin: 0.75rem;
+}
+
+.btn-sort:hover, .btn-sort:focus {
+    background-color: var(--light-yellow);
+    color: var(--dark-green);
+    cursor: pointer;
+}
+
 /*===============
 ======CARDS======
 ===============*/
@@ -320,6 +342,14 @@ header {
 
 .card-info i {
     color: var(--med-green);
+}
+
+.hidden {
+    display: none;
+}
+
+.clicked {
+    background-color: var(--light-yellow);
 }
 
 /*===============
