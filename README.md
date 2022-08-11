@@ -18,6 +18,14 @@ This is my final project for the Code First Girls Web Development Kickstarter co
 - [x] Effective use of classes and IDs
 - [x] JavaScript used to enable user interaction
 
+## What Went Well
+1. The JavaScript sorting function was a lot easier to write than I thought it would be, I got it done so much more quickly than I thought I would.
+2. I'm really happy with the design and colour scheme.
+
+## Where I Struggled
+1. Getting the mobile nav menu to work took me forever, and it still doesn't look quite as I intended it to. I'd like to have the same frosted-glass effect on the mobile nav as is on the desktop nav, but the backdrop-filter property wasn't playing nice with the expanding menu. I settled for an opaque nav menu for now.
+2. The accordion menus were a real challenge as I wasn't quite sure how to approach them, and wanted to avoid using the built-in ```<details><summary>``` HTML element. I watched several tutorials of different methods, but none of them were working quite as I wanted for some reason or another. Eventually I meshed together bits from a couple different tutorials to make something I was happy with.
+
 ## What I Learned
 1. How to create a side-sliding mobile nav menu that opens on click
 2. Implementing event listeners
@@ -28,10 +36,11 @@ This is my final project for the Code First Girls Web Development Kickstarter co
 7. Using the aria-controls element for accessibility
 
 ## Continued Development / Still To Do
-- [ ] Add the aria-expanded attribute on the accordion items and mobile nav for increased accessibility
-- [ ] Add an 'About' page 
+- [ ] Add the aria-expanded attribute on the accordion items and mobile nav for increased accessibility, to be toggled with JS
+- [ ] Add an 'About' page with more details about the project
 - [ ] Do futher research into the content to improve the site copy and make it more personal and engaging
 - [ ] Add an 'active' class to the current page to aid with visual navigation
-- [ ] Fix primary buttons on the homepage (currently doing some weird things when tabbing through)
+- [ ] Fix primary buttons on the homepage (currently doing some weird things when tabbing through because it's a button wrapped in an anchor tag)
 - [ ] Fix mobile nav so it doesn't briefly pop out when screen shrinks
+- [ ] Check which CSS properties need -webkit- prefixes and add those in where needed
 
