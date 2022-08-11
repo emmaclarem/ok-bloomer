@@ -5,15 +5,15 @@ This is my in-progress final project for Code First Girls Web Development Kickst
 
 ## Project Requirements 
 #### Must Have:
-- [ ] At least 2 HTML pages and one external CSS file
-- [ ] Consistent navbar on all pages 
-- [ ] Styled well
-- [ ] All links working
-- [ ] Basic user interaction (ex: hover, submit form, action on click)
+- [x] At least 2 HTML pages and one external CSS file
+- [x] Consistent navbar on all pages 
+- [x] Styled well
+- [x] All links working
+- [x] Basic user interaction (ex: hover, submit form, action on click)
 #### Nice to Have:
-- [ ] Mobile-responsive website
-- [ ] Effective use of classes and IDs
-- [ ] JavaScript used to enable user interaction
+- [x] Mobile-responsive website
+- [x] Effective use of classes and IDs
+- [x] JavaScript used to enable user interaction
 
 ## What I Learned
 1. How to create a side-sliding mobile nav menu that opens on click
@@ -21,6 +21,4 @@ This is my in-progress final project for Code First Girls Web Development Kickst
 3. Using JavaScript to add an 'active' class to various components on click
 4. Using JavaScript to filter items on user interaction
 
-## Continued Development
 
- 
