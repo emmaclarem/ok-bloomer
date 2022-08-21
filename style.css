@@ -8,6 +8,7 @@
 6. CARDS
 7. GENERAL LAYOUT
 8. ACCORDION MENU 
+9. FOOTER
 ===================*/
 
 
@@ -524,3 +525,34 @@ header {
     transform: rotate(45deg);
 }
 
+/*===============
+====8.FOOTER=====
+===============*/
+
+footer {
+    color: var(--med-green);
+}
+
+.footer-content > * {
+    margin-block: 1rem;
+}
+
+.footer-links {
+    justify-content: center;
+}
+
+footer li {
+    list-style: none;
+    margin-inline: 1.5rem;
+}
+
+footer a {
+    text-decoration: underline;
+    color: var(--dark-green);
+    padding: 0.15rem 0.25rem;
+}
+
+footer a:hover, footer a:focus {
+    color: #ddb8fd;
+    font-weight: 600;
+}
