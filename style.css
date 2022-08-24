@@ -466,6 +466,7 @@ header {
 
 .sort-instructions {
     width: 90%;
+    margin-inline: auto;
 }
 
 /*===============
